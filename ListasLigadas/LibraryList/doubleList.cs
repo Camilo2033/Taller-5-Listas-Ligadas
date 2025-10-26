@@ -30,19 +30,19 @@ namespace LibraryList
                 actual = actual.Siguiente;
             }
 
-            if (anterior == null) // insertar al inicio
+            if (anterior == null) // insert at the beginning
             {
                 nuevo.Siguiente = cabeza;
                 cabeza.Anterior = nuevo;
                 cabeza = nuevo;
             }
-            else if (actual == null) // insertar al final
+            else if (actual == null) // insert at the end
             {
                 cola.Siguiente = nuevo;
                 nuevo.Anterior = cola;
                 cola = nuevo;
             }
-            else // insertar en medio
+            else // insert in the middle
             {
                 nuevo.Siguiente = actual;
                 nuevo.Anterior = anterior;
